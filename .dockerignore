@@ -1,0 +1,10 @@
+# Ignorar entornos virtuales
+venv
+
+# Archivos y carpetas temporales
+*.pyc
+__pycache__
+
+# Archivos de configuración local
+db.sqlite3
+.env

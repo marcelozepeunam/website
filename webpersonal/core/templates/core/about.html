@@ -5,19 +5,122 @@
 {% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1>Acerca de</h1>
-<span class="subheading">Biografía</span>
+<h1 class="text-center">Acerca de</h1>
+<!-- <span class="subheading text-center">Biografía</span> -->
 {% endblock %}
 
 {% block content %}
-<div class="row"> 
-    <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
-    </div>
-    <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading">Juan Pérez</h2>   
-        <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="Foto de perfil">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Marcelo Zepeda</h2>
+
+            <p style="text-align: justify;">
+                <br>
+                Soy <strong>Ingeniero Eléctrico y Electrónico</strong> graduado de la <strong>Universidad Nacional Autónoma de México (UNAM)</strong>, con pasión por el desarrollo de software y la tecnología. Mi enfoque se centra principalmente en <strong>programación backend</strong>.
+            </p>
+
+            <p style="text-align: justify;">
+                Durante mi carrera, he adquirido habilidades en diversas tecnologías, incluyendo:
+            </p>
+            
+            <br>
+            <h5>Lenguajes de Programación</h5>
+            <ul>
+                <li>Python 3.11.2</li>
+                <li>Micropython</li>
+                <li>C ++</li>
+            </ul>
+
+            <h5>Frameworks</h5>
+            <ul>
+                <li>Django 4.2</li>
+                <li>Flask 2.3.2</li>
+            </ul>
+
+            <h5>Cloud Computing (AWS)</h5>
+            <ul>
+                <li>IAM</li>
+                <li>EC2</li>
+                <li>S3</li>
+                <li>Lambda</li>
+                <li>Cloud9</li>
+                <li>CloudWatch</li>
+            </ul>
+
+            <h5>Bases de datos</h5>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+
+            <h5>Otros</h5>
+            <ul>
+                <li>Git & Github</li>
+                <li>Prompt Engineer</li>
+                <li>Pandas (biblioteca de análisis de datos en Python)</li>
+                <li>Apache Airflow</li>
+                <li>Docker</li>
+            </ul>
+
+            <br>
+            <p style="text-align: justify;">
+                He tenido la oportunidad de liderar y colaborar en proyectos significativos, que requieren tanto un sólido conocimiento técnico como habilidades para resolver problemas complejos y <strong>trabajar eficientemente en equipo</strong>.
+            </p>
+
+            <p style="text-align: justify;">
+                Mi formación en la UNAM me ha proporcionado una base sólida en principios de <strong>ingeniería y programación</strong>, permitiéndome explorar y dominar diversas tecnologías. He aplicado estos conocimientos en el <strong>desarrollo de aplicaciones robustas, seguras y escalables</strong>, enfocándome en la creación de soluciones eficientes y efectivas que satisfacen las necesidades específicas de los usuarios y contribuyen al éxito de los objetivos empresariales.
+            </p>
+
+            <p style="text-align: justify;">
+                Además de mi experiencia técnica, valoro la importancia de la <strong>comunicación efectiva</strong>. He colaborado con profesionales de diversas disciplinas, lo que me ha permitido desarrollar una perspectiva integral sobre el desarrollo de proyectos y asegurar que las soluciones tecnológicas se integren de manera óptima con otras áreas del negocio.
+            </p>
+
+            <p style="text-align: justify;">
+                Estoy constantemente buscando ampliar mis conocimientos y habilidades, participando en cursos de actualización, talleres y conferencias. Mi objetivo es seguir contribuyendo al campo de la tecnología y el desarrollo de software, impulsando innovaciones que tengan un impacto positivo en la sociedad.
+            </p>
+        </div>
     </div>
 </div>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/marcelozepeda" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/marcelozepeunam" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:marcelozepe.unam@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; 2024 · Marcelo Zepeda</p>
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}

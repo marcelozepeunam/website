@@ -1,22 +1,30 @@
-{% extends 'core/base.html' %}
+{% extends "core/base.html" %}
 
-{% block title %}Contacto{% endblock %}
+{% block title %}Contacto {% endblock %} 
 
 {% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1>Contacto</h1>
-<span class="subheading">Asesoría</span>
+    <h1>Contacto</h1>
+    <!-- <span class="subheading">Asesoría</span> -->
 {% endblock %}
 
 {% block content %}
-<div class="row"> 
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <br>
-        <p><b>Teléfono:</b> +09 876 543 210</p>
-        <p><b>Honorarios:</b> 60€/h (precio base)</p>
+<section class="contacto">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p style="text-align: center; justify-content: center;" class="text-dark"><strong>¡Bienvenido a mi página web!</strong></p>
+        <p style="text-align: justify;" class="text-dark"><br></br>Es un placer recibirte aquí y espero que tu visita haya sido agradable y productiva. Mi objetivo es proporcionarte una experiencia informativa y enriquecedora, donde puedas conocer más sobre mí y mis habilidades como desarrollador backend.</p>
+        <p style="text-align: justify;" class="text-dark">Como profesional y amante de la tecnología, me dedico a encontrar soluciones innovadoras y eficientes para los desafíos tecnológicos que enfrentan las empresas y emprendedores. Con mi experiencia y conocimientos en desarrollo backend, estoy preparado para abordar una amplia gama de proyectos y contribuir al éxito de tu empresa o idea.</p>
+        <p style="text-align: justify;" class="text-dark">Mi compromiso va más allá de simplemente crear código. Me esfuerzo por comprender tus objetivos y necesidades específicas, para ofrecerte soluciones personalizadas y adaptadas a tus requerimientos. Además, me mantengo al tanto de las últimas tendencias y tecnologías en el campo del desarrollo web, para asegurarme de que tus proyectos estén a la vanguardia.</p>
+        <p style="text-align: justify;" class="text-dark">Estoy aquí para ayudarte en cualquier etapa de tu proyecto, ya sea que estés en la fase inicial de planificación o necesites optimizar una aplicación existente. Tu satisfacción y el éxito de tu proyecto son mi máxima prioridad.</p>
+        <p style="text-align: justify;" class="text-dark">No dudes en contactarme para discutir tus ideas, proyectos o cualquier consulta que tengas. Estoy ansioso por escuchar tus necesidades y trabajar juntos para convertir tus visiones en realidad.</p>
+        <p style="text-align: justify;" class="text-dark">¡Gracias nuevamente por visitar mi página web y espero tener la oportunidad de colaborar contigo en el futuro!</p>
+        <p style="text-align: center;" class="text-dark"><br><br><strong>¡Saludos cordiales!</strong></p>
+        <p style="text-align: center;" class="text-dark"><strong>Marcelo Zepeda</strong></p>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 {% endblock %}
-
