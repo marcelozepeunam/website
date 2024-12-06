@@ -14,7 +14,14 @@ SECRET_KEY = 'x-h&qoq4&j#u%+h+$84d_rnx!rbpa#40xnemb7z547!!c1a6xu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '18.212.200.83', 'marcelodeveloper.com']
+ALLOWED_HOSTS = [
+    'marcelodeveloper.com',
+    'www.marcelodeveloper.com',
+    '34.193.94.45',  # Nueva IP estática
+    '127.0.0.1',     # Para pruebas locales
+    'localhost',     # Para pruebas locales
+]
+
 
 
 # Application definition
